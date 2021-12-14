@@ -1,0 +1,146 @@
+// 2577번 //
+public class Main {
+	public static void main(String[] args) {
+		System.out.print("Hello World!");
+   
+// 10718번 //
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("강한친구 대한육군");
+		System.out.println("강한친구 대한육군"); 
+
+
+// 10171번 //
+public class Main {
+	public static void main(String[] args) {
+    
+		System.out.println("\\    /\\");
+		System.out.println(" )  ( ')");
+		System.out.println("(  /  )");
+		System.out.println(" \\(__)|");    
+ 
+	}
+}
+
+// 10172번 //
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("|\\_/|");
+		System.out.println("|q p|   /}");
+		System.out.println("( 0 )\"\"\"\\");
+		System.out.println("|\"^\"`    |");
+		System.out.println("||_/=\\\\__|");     
+
+// 1000번 //
+import java.util.Scanner;
+ 
+public class Main {
+ 
+	public static void main(String[] args) {
+ 
+		Scanner in = new Scanner(System.in);
+		int A = in.nextInt();
+		int B = in.nextInt();
+		
+		System.out.println(A+B);
+ 
+		in.close();
+	}
+}
+
+// 1001번 //
+import java.util.Scanner;
+ 
+public class Main {
+ 
+	public static void main(String[] args) {
+ 
+		Scanner in = new Scanner(System.in);
+		int A = in.nextInt();
+		int B = in.nextInt();
+		
+		System.out.println(A-B);
+ 
+		in.close();
+	}
+}
+
+// 10998번 //
+import java.util.Scanner;
+ 
+public class Main {
+ 
+	public static void main(String[] args) {
+ 
+		Scanner in = new Scanner(System.in);
+		int A = in.nextInt();
+		int B = in.nextInt();
+		
+		System.out.println(A*B);
+ 
+		in.close();
+	}
+}
+
+// 1008번 //
+import java.util.Scanner;
+ 
+public class Main {
+ 
+	public static void main(String[] args) {
+ 
+		Scanner in=new Scanner(System.in);
+		
+		double a=in.nextDouble();
+		double b=in.nextDouble();
+		
+		in.close();
+		System.out.print(a/b);
+ 
+	}
+}
+
+// 10869번 //
+import java.util.Scanner;
+ 
+public class Main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int A = in.nextInt();
+		int B = in.nextInt();
+ 
+        in.close();
+ 
+		System.out.println(A+B);
+		System.out.println(A-B);
+		System.out.println(A*B);
+		System.out.println(A/B);
+		System.out.println(A%B);
+	}
+}
+
+// 10430번 //
+import java.util.Scanner;
+public class Main {
+ 
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		int A = in.nextInt();
+		int B = in.nextInt();
+		int C = in.nextInt();
+ 
+		in.close();
+ 
+		System.out.println( (A+B)%C );
+		System.out.println( (A%C + B%C)%C );
+		System.out.println( (A*B)%C );
+		System.out.println( (A%C * B%C)%C );
+		
+	}
+ 
+}
+
+// 2588번 //
+
+    
