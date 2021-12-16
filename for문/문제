@@ -186,7 +186,34 @@ public class Main {
 
         int N = sc.nextInt();
 
+        for (int i = 1; i <= N; i++) {  		
+            for (int s = 1; s <= i; s++) {
+                System.out.print("*");			// **********출력
+            }
+            System.out.println();			// * ** *** **** ***** 를 줄바꿈해서 출력
+        }
+    }
+}
+
+
+
+// 2439번 //
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+
         for (int i = 1; i <= N; i++) {
+            for (int m = 1; m <= (N - i); m++) { // int 형 변수 m을 만들고 i가 1일때 m은 4이므로 대입값이 (N - i)가 되는 것이고 m은 계속 증가한다
+                System.out.print(" ");
+            }
             for (int s = 1; s <= i; s++) {
                 System.out.print("*");
             }
