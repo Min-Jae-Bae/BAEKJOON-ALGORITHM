@@ -22,3 +22,22 @@ public class Main {
 
     }
 }
+
+$$ // 10951 // $$
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextInt()) { ///////// hasnextint는 정수 이외의 값을 받을 경우 False 값을 반환하는 메소드 이다 매우중요!!!!!!!!!
+            int A = sc.nextInt();
+            int B = sc.nextInt();
+
+            System.out.println(A + B);
+        }
+    }
+}
