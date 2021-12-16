@@ -169,3 +169,28 @@ public class Main {
         }
     }
 }
+
+
+
+// 2438번 //
+
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+
+        for (int i = 1; i <= N; i++) {
+            for (int s = 1; s <= i; s++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
