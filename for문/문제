@@ -15,7 +15,30 @@ public class Main {
 }
 
 // 10950번 //
+import java.util.Scanner;
 
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+
+        int b;
+        int c;
+
+        for (int i = 1; i <= N; i++) {
+
+            b = sc.nextInt();
+            c = sc.nextInt();
+
+            System.out.println(b + c);
+        }
+    }
+}
 
 // 8393번 //
 import java.util.Scanner;
