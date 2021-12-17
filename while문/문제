@@ -46,27 +46,28 @@ public class Main {
 // 1110번 //
 
 import java.util.Scanner;
- 
+
+/**
+ * Main
+ */
 public class Main {
- 
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
- 
-		int N = in.nextInt();
-		in.close();
-        
-		int cnt = 0;
-		int copy = N;
-        
-		while (true) {
-			N = ((N % 10) * 10) + (((N / 10) + (N % 10)) % 10);
-			cnt++;
- 
-			if (copy == N) {
-				break;
-			}
-		}
-		System.out.println(cnt);
-	}
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int cnt = 0; // 변화하는 횟수를 지정함
+        int copy = N; // N의 처음받은 값을 복사하여 넣음
+
+        while (true) {
+            N = ((N % 10) * 10) + (((N % 10) + (N / 10)) % 10); // N이라는 새로운 변수에 변화는 값이 계속 만들어짐
+            cnt++;      // 값이 변할수록 1씩 증가시킨다.
+
+            if (copy == N) {        // N의 처음값을 복사한 copy가 변화한 새로운 변수값 과 같을 때 종료한다.
+                break;
+            }
+        }
+        System.out.println(cnt);        // 같아질 때 까지 변화시킨 총 횟수 출력
+
+    }
 }
- 
