@@ -22,3 +22,37 @@ public class Main {
         System.out.println(arr[0] + " " + arr[N - 1]);  // 각각의 인덱스를 출력한다.
     }
 }
+
+// 2562번 //
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = new int[9];
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int count = 0; // 카운트를 0으로 초기화
+        int max = 0;    // 최댓값을 0으로 초기화
+        int index = 0;  // 인덱스 값을 0으로 초기화
+
+        for (int value : arr) { ///  for each 구문으로 for ( 자료형 새로운 배열 이름: 원래 배열)    즉 새로룬 배열에 하나씩 넣음
+            count++;            // 하나씩 넣을때 마다 증가
+
+            if (value > max) {  //하나씩 넣는 값인 value가 max 보다 크다면
+                max = value;        // 최댓값은 value이다
+                index = count;      // index는 최댓값을 찾은 횟수를 말한다.
+            }
+        }
+
+        System.out.println(max + "\n" + index);
+
+    }
+}
