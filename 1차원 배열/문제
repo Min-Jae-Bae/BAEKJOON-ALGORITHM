@@ -156,3 +156,37 @@ public class Main {
         System.out.println(average);    
     }
 }
+
+// 8958번 //
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String[] arr = new String[sc.nextInt()]; /// 애초에 변수를 선언하지 않고 바로 넣는다 .... int N을 선언하지 않음
+
+        for (int i = 0; i < arr.length; i++) { /// arr의 길이만큼 인덱스 안에 입력 받는다.
+            arr[i] = sc.next();
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            int cnt = 0; // 연속횟수        연속 횟수를 의미하한다. 곧 값이다.
+            int sum = 0; // 합계
+
+            for (int j = 0; j < arr[i].length(); j++) {
+                if (arr[i].charAt(j) == 'O') {  // 배열의 각 인덱스 안의 값을 하나씩 뽑아낸다.
+                    cnt++; // 연속횟수 'O'가 연속으로 있으면 +1 (즉 값이다.)
+                } else {
+                    cnt = 0;    // 다른게 있으면 0이다
+                }
+                sum += cnt; // 한번 돌아간 것을 합산한다.
+            }
+            System.out.println(sum);
+        }
+    }
+}
