@@ -190,3 +190,46 @@ public class Main {
         }
     }
 }
+// 4344q번 //
+import java.util.Scanner;
+
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] arr; /// arr이라는 배열을 생성
+
+        int test = sc.nextInt(); // test케이스 입력을 한다.
+
+        for (int i = 0; i < test; i++) {
+
+            int N = sc.nextInt(); // 학생 수를 입력한다.
+            arr = new int[N]; // 학생수 만큼 안에 점수를 넣는다.
+
+            double sum = 0; // 학생들의 점수 합 변수를 초기화 한다.
+
+            for (int j = 0; j < N; j++) {
+
+                int val = sc.nextInt(); // 학생들의 점수를 입력한다.
+                arr[j] = val;
+                sum += val; // 성적을 합산한다.
+            }
+
+            double mean = (sum / N);
+            double count = 0; // 평균 넘는 학생 수 변수 초기화
+
+            // 평균 넘는 학생 비율 찾기
+            for (int j = 0; j < N; j++) {
+                if (arr[j] > mean) {
+                    count++;
+                }
+            }
+            System.out.printf("%.3f%%\n", (count / N) * 100); /// %.3%는 3자리 까지 보여준다는 뜻이다.
+        }
+    }
+}
