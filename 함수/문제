@@ -11,3 +11,45 @@ public class Test {    // Test 클래스 생성
         return sum; /// 합계를 나오게 한다.
     }
 }
+
+// 4673번 //
+public class Main {
+    public static void main(String[] args) { // 메인
+        /*
+         * 1부터 10000까지 검사할 때 메인에서 d 함수로 숫자를 넣어보며
+         * return 되는 수는 해당 number를 생성자로 하는 수로 구성
+         */
+        boolean[] check = new boolean[10001]; // return 된 수는 생성자가 있는 수,
+        // 즉 출력하면 안되는 수 이므로 boolean 배열을 통해 true로 바꿈
+
+        for (int i = 1; i < 10001; i++) { // 1부터 10000까지의 숫자를 본다.
+            int n = d(i); // 함수 구현
+
+            if (n < 10001) { // 1000이 넘는 수는 필요가 없음
+                check[n] = true;
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 1; i < 10001; i++) {
+            if (!check[i]) {
+                sb.append(i).append('\n');
+            }
+        }
+        System.out.println(sb);
+    }
+
+    /*
+     * 먼저 number 라는 수를 받게 되면 number을 생성자로 하는 수를 리턴시킬 것이기 때문에
+     * sum이란 변수를 하나 생성한다. 그리고 초기값은 number로 한다.
+     */
+    public static int d(int number) { // 함수
+        int sum = number;
+
+        while (number != 0) { // 셀프넘버를 찾기 위한 반복문을 작성한다.
+            sum = sum + (number % 10); // 첫 째 자리수
+            number = number / 10; // 10을 나누어 첫 째 자리를 없앤다.
+        }
+        return sum;
+    }
+}
