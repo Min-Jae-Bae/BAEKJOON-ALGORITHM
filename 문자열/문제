@@ -1,0 +1,18 @@
+// 11654번 //
+import java.util.Scanner;
+
+/**
+ * Main1
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextLine().charAt(0); // 문자열을 잘라 문자에 대응되는 값, 즉 아스키 코드값을 저장
+
+        System.out.println(num);
+
+        /// int 타입 변수에 저장함으로싸 문자에 대응되는 값, 아스키 코드 값을 저장
+    }
+}
