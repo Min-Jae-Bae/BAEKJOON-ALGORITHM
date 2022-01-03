@@ -42,6 +42,6 @@ public class Main1 {
         if (N == 1) ///,,,
             return 1;
 
-        return fibonacci(N - 1) + fibonacci(N - 2);  /// 나머지 일때 출력한다.
+        return fibonacci(N - 1) + fibonacci(N - 2);  /// 나머지 일때 출력한다. 피보나치는 무한수열을 보여준다.
     }
 }
