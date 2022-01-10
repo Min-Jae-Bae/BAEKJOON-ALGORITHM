@@ -215,6 +215,6 @@ public class Main1 {
 
         StringTokenizer st = new StringTokenizer(s," ");    //  st에 s로 입력 받은 문장을 띄어쓰기를 기준으로 입력한다.
         
-        System.out.println(st.countTokens());   // st에 넣은 문자들을 각각 갯수로 반환한다.
+        System.out.println(st.countTokens());   // st에 넣은 문자들을 각각 갯수로 반환한다. StringTokenzier
     }
 }
