@@ -218,3 +218,41 @@ public class Main1 {
         System.out.println(st.countTokens());   // st에 넣은 문자들을 각각 갯수로 반환한다. StringTokenzier
     }
 }
+
+// 5622번 //
+import java.util.Scanner;
+
+/**
+ * Main1
+ */
+public class Main1 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String s = sc.nextLine();
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if ('A' <= s.charAt(i) && s.charAt(i) < 'D') {
+                count += 3;
+            } else if ('D' <= s.charAt(i) && s.charAt(i) < 'G') {
+                count += 4;
+            } else if ('G' <= s.charAt(i) && s.charAt(i) < 'J') {
+                count += 5;
+            } else if ('J' <= s.charAt(i) && s.charAt(i) < 'M') {
+                count += 6;
+            } else if ('M' <= s.charAt(i) && s.charAt(i) < 'P') {
+                count += 7;
+            } else if ('P' <= s.charAt(i) && s.charAt(i) < 'T') {
+                count += 8;
+            } else if ('T' <= s.charAt(i) && s.charAt(i) < 'W') {
+                count += 9;
+            } else {
+                count += 10;
+
+            }
+        }
+        System.out.println(count);
+    }
+}
