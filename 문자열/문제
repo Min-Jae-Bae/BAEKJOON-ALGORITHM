@@ -255,4 +255,90 @@ public class Main1 {
         }
         System.out.println(count);
     }
+}'
+
+// 2941번 //
+import java.util.Scanner;
+
+/**
+ * Main1
+ */
+public class Main1 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine(); // 입력을 받는다
+        int count = 0; // 크로아티아 알파벳을 찾기 위한 갯수
+
+        for (int i = 0; i < str.length(); i++) { // s를 받은 만큼 반복
+            char ch = str.charAt(i); // ch라는 문자형에 하나씩 넣는다
+
+            if (ch == 'c') {
+                if (i < str.length() - 1) {
+                    if (str.charAt(i + 1) == '=') { // 그 다음 문자형이 '='일 때
+                        i++; // 다음 문자형으로 넘어간다.
+                    } else if (str.charAt(i + 1) == '-') {
+                        i++;
+                    }
+
+                } // ch 문자형이 'c'일 때
+            }
+
+            if (ch == 'd') {
+                if (i < str.length() - 1) { // d 하나일 때 앞에 비었으면 제외
+                    if (str.charAt(i + 1) == 'z') {
+                        if (i < str.length() - 2) { // z다음에 비었으면을 제외
+                            if (str.charAt(i + 2) == '=') {
+                                i += 2; // 2개 건너서 다음꺼
+                            }
+                        }
+                    } else if (str.charAt(i + 1) == '-') {
+                        i++;
+                    }
+
+                }
+            }
+
+            if (ch == 'l') {
+                if (i < str.length() - 1) {
+                    if (str.charAt(i + 1) == 'j') {
+                        i++;
+                    }
+
+                }
+            }
+
+            if (ch == 'n') {
+                if (i < str.length() - 1) {
+                    if (str.charAt(i + 1) == 'j') {
+                        i++;
+                    }
+
+                }
+            }
+
+            if (ch == 's') {
+                if (i < str.length() - 1) {
+                    if (str.charAt(i + 1) == '=') {
+                        i++;
+                    }
+
+                }
+            }
+
+            if (ch == 'z') {
+                if (i < str.length() - 1) { // abecez z 다음의 공백을 오류를 없애기 위해서
+                    if (str.charAt(i + 1) == '=') {
+                        i++;
+                    }
+
+                }
+            }
+            count++; // i를 하나씩 ++해서 확인함 안에서
+        }
+
+        System.out.println(count);
+
+    }
 }
