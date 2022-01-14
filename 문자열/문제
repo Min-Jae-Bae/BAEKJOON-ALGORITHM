@@ -309,7 +309,7 @@ public class Main1 {
                 }
             }
 
-            if (ch == 'n') {
+            if (ch == 'n') { // n일때
                 if (i < str.length() - 1) {
                     if (str.charAt(i + 1) == 'j') {
                         i++;
