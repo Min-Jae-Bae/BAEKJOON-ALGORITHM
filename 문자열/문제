@@ -338,7 +338,7 @@ public class Main1 {
             count++; // i를 하나씩 ++해서 확인함 안에서
         }
 
-        System.out.println(count);
+        System.out.println(count); // 출력하기
 
     }
 }
