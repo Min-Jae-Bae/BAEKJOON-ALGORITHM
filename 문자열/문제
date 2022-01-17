@@ -342,3 +342,54 @@ public class Main1 {
 
     }
 }
+
+
+// 1316번 //
+import java.util.Scanner;
+
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int count = 0;
+        int N = sc.nextInt();
+
+        for (int i = 0; i < N; i++) {
+            if (check() == true) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    public static boolean check() { // 단어가 입력되면 해당 문자열이 그룹 단어인지 아닌지 따지는 boolean
+        boolean[] check = new boolean[26]; // 26개의 단어를 체크 할 길이 26의 boolean 배열 선언
+        int prev = 0; // 반복문에서 문자를 꺼내올 때 앞선 문자와 연속되는지, 아닌지를 판별하기 위함
+        String str = sc.next();
+
+        for (int i = 0; i < str.length(); i++) { // 그룹 단어인지 아닌지 검사 반복문
+            int now = str.charAt(i); // i번째 문자 저장 (현재 문자)
+
+            // 앞선 문자의 i 번째 문자가 같지 않다면?
+            if (prev != now) {
+
+                if (check[now - 'a'] == false) {
+                    check[now - 'a'] = true;
+                    prev = now;
+                }
+
+                // 해당 문자가 이미 나온 적이 있는 경우 (그룹다언가 아니게 됨)
+                else {
+                    return false; // 함수 종료
+                }
+            }
+
+            // 앞선 문자와 i 번째 문자가 같다면? (연속된 문자)
+            // else 문은 없어도 됨
+            else {
+                continue;
+            }
+        }
+        return true;
+    }
+}
