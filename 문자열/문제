@@ -253,7 +253,7 @@ public class Main1 {
 
             }
         }
-        System.out.println(count);
+        System.out.println(count); // 출력
     }
 }'
 
