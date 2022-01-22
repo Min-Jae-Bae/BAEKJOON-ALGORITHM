@@ -38,3 +38,33 @@ public class Main {
 
     }
 }
+
+// 1085번 //
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int w = sc.nextInt();
+        int h = sc.nextInt();
+
+        int x_min = Math.min(x, w - x); // 값중 제일 작은거 선택
+        int y_min = Math.min(y, h - y); // 값중 제일 작은거 선택
+
+        // x y 값 중 제일 작은거 선택
+        System.out.println(Math.min(x_min, y_min));
+
+    }
+}
