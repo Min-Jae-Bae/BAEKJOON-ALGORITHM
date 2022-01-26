@@ -45,7 +45,7 @@ public class Main {
 		int count = 1; // 겹 수(최소 루트)
 		int range = 2;	// 범위 (최솟값 기준) 
  
-		if (N == 1) {
+		if (N == 1) { // N이 1일 때
 			System.out.print(1);
 		}
  
