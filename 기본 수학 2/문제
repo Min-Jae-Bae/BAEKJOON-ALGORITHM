@@ -84,7 +84,7 @@ public class Main {
 				N /= i;
 			}
 		}
-		if (N != 1) {
+		if (N != 1) { // 1일때
 			System.out.println(N);
 		}
 	}
