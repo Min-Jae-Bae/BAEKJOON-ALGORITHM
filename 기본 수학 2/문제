@@ -89,3 +89,40 @@ public class Main {
 		}
 	}
 }
+
+// 4153번 //
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double[] arr = new double[3];
+
+        while (true) {
+            for (int i = 0; i < 3; i++) {
+                arr[i] = sc.nextDouble();
+            }
+            Arrays.sort(arr);
+
+            if (arr[2] == 0 && arr[1] == 0 && arr[0] == 0) {
+                break;
+            }
+            int resultA = (int) Math.pow(arr[2], 2);
+            int resultB = (int) Math.pow(arr[1], 2);
+            int resultC = (int) Math.pow(arr[0], 2);
+
+            if (resultA == (resultB + resultC)) {
+                System.out.println("right");
+                continue;
+            } else {
+                System.out.println("wrong");
+                continue;
+            }
+        }
+    }
+}
