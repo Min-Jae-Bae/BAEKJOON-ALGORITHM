@@ -3,3 +3,7 @@
 ## BAEKJOON-ALGORITHM
 ---
 ### BAEKJOON-ALGORITHM
+
+1. 안녕하세요
+2. 고마워요
+3. 사랑해요
