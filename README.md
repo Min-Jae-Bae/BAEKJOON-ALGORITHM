@@ -25,3 +25,8 @@
 >>**Gihub**는 *원격* ***저장소를*** ~~제공하는~~ 서비스이기 때문에
 
 `Scanner sc = new Scanner(System.in);`
+
+```java
+Scanner sc = new Scanner(System.in);
+```
+
