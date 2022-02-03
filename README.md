@@ -30,3 +30,6 @@
 Scanner sc = new Scanner(System.in);
 ```
 
+<www.naver.com>
+[네이버 주소](www.naver.com)
+[네이버 주소](www.naver.com, "검색 사이트")
