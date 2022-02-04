@@ -126,3 +126,25 @@ public class Main {
         }
     }
 }
+
+// 3053번 //
+import java.text.Format;
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int R = sc.nextInt();
+
+        double UC = Math.PI * R * R;
+        double Tax = 2 * Math.pow(R, 2);
+
+        System.out.println(String.format("%.6f", UC));
+        System.out.println(String.format("%.6f", Tax));
+    }
+}
