@@ -182,3 +182,38 @@ public class Main {
         System.out.println(count);
     }
 }
+// 1929번 //
+import java.util.Scanner;
+
+/**
+ * Main
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int M = sc.nextInt();
+        int N = sc.nextInt();
+
+        while (M <= N) {
+            boolean isprime = true;
+
+            if (M == 1) {
+                M++;
+                continue;
+            }
+            for (int i = 2; i <= Math.sqrt(M); i++) {
+                if (M % i == 0) {
+                    isprime = false;
+                    M++;
+                    break;
+                }
+            }
+            if (isprime) {
+                System.out.println(M);
+                M++;
+            }
+        }
+    }
+}
