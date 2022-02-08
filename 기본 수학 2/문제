@@ -203,7 +203,7 @@ public class Main {
                 M++;
                 continue;
             }
-            for (int i = 2; i <= Math.sqrt(M); i++) {
+            for (int i = 2; i <= Math.sqrt(M); i++) {	// 소수를 구하는 방법
                 if (M % i == 0) {
                     isprime = false;
                     M++;
