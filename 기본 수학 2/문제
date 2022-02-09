@@ -197,7 +197,7 @@ public class Main {
         int N = sc.nextInt();
 
         while (M <= N) {
-            boolean isprime = true;
+            boolean isprime = true; // 참 거짓 판별
 
             if (M == 1) {
                 M++;
