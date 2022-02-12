@@ -24,7 +24,7 @@ public class Main {
 
             } else {
                 prev_count_sum += cross_count;  // ㅎㅏㅂㄱㅖ
-                cross_count++;
+                cross_count++; : // 증가
 
             }
 
