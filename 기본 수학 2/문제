@@ -231,7 +231,7 @@ public class Main {
  
 		int T = in.nextInt();
  
-		while (T-- > 0) {
+		while (T-- > 0) { // T가 0으로갈 때
  
 			int x1 = in.nextInt();
 			int y1 = in.nextInt();
