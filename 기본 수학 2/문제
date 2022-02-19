@@ -268,7 +268,7 @@ public class Main {
 			return 0;
 		}
 		
-		// case 3-1 : 내접할 때 
+		// case 3-1 : // 내접할 때 
 		else if(distance_pow == Math.pow(r2 - r1, 2)) {
 			return 1;
 		}
