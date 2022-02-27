@@ -15,7 +15,7 @@ public class Main {
         int[] B = { sc.nextInt(), sc.nextInt() }; // 2번째 좌표
         int[] C = { sc.nextInt(), sc.nextInt() }; // 3번째 좌표
 
-        int x;
+        int x;ㅋㅋ
         int y;
 
         if (A[0] == B[0]) {
